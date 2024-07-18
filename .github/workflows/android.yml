@@ -22,13 +22,16 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew build
+      run: |
+        ./gradlew assembleRelease --stacktrace
+        ./gradlew bundleRelease --stacktrace
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
         draft: true
         files: |
           app/build/outputs/apk/release/app-release-unsigned.apk
+          app/build/outputs/apk/release/app-release-unsigned.aab
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
