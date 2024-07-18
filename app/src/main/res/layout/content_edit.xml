@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:padding="10dp"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="horizontal">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:padding="4dp"
+             android:textSize="18dp"
+             android:layout_weight="1"
+             android:text="Total Budget" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textSize="18dp"
+             android:text="$" />
+
+        <EditText
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:inputType="numberDecimal"
+             android:minWidth="100dp"
+             android:id="@+id/tgtbal"
+             android:hint="123.45" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="horizontal">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:padding="4dp"
+             android:textSize="18dp"
+             android:layout_weight="1"
+             android:text="Balance on first day" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textSize="18dp"
+             android:text="$" />
+
+        <EditText
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:inputType="numberDecimal"
+             android:minWidth="100dp"
+             android:id="@+id/startbal"
+             android:hint="0.00" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="horizontal">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:padding="4dp"
+             android:textSize="18dp"
+             android:layout_weight="1"
+             android:text="Current balance spent" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textSize="18dp"
+             android:text="$" />
+
+        <EditText
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:inputType="numberDecimal"
+             android:minWidth="100dp"
+             android:id="@+id/spent"
+             android:hint="0.00" />
+
+    </LinearLayout>
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="24dp"
+         android:text="Start Date"
+         android:paddingTop="20dp" />
+
+    <CalendarView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:id="@+id/startdate"
+         android:layout_gravity="center">
+
+    </CalendarView>
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="24dp"
+         android:text="End Date"
+         android:paddingTop="20dp" />
+
+    <CalendarView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:id="@+id/enddate"
+         android:layout_gravity="center">
+
+    </CalendarView>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/widget"
+     android:layout_height="match_parent"
+     android:layout_width="fill_parent"
+     android:background="@color/colorPrimary"
+     android:gravity="right"
+     android:paddingRight="8dp"
+     android:orientation="horizontal"
+     android:paddingLeft="8dp">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="fill_parent"
+         android:gravity="center"
+         android:padding="8dp"
+         android:orientation="vertical"
+         android:layout_weight="1">
+                        
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="6dp"
+             android:textSize="16dp"
+             android:textColor="@android:color/white"
+             android:id="@+id/compStr"
+             android:text="5 days ahead" />
+
+        <ProgressBar
+             android:id="@+id/progress"
+             android:min="0"
+             android:max="65535"
+             android:layout_height="10dp"
+             android:layout_width="match_parent"
+             android:indeterminate="false"
+             android:layout_marginBottom="6dp"
+             style="@android:style/Widget.ProgressBar.Horizontal"
+             android:progressDrawable="@drawable/wbalprogress" />
+        
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="-2dp"
+             android:textSize="12dp"
+             android:textColor="@android:color/white"
+             android:id="@+id/compMoney"
+             android:text="20% ($23.45 / $123.45)"
+             android:textStyle="italic" />
+        
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="0dp"
+             android:textSize="12dp"
+             android:textColor="@android:color/white"
+             android:id="@+id/compTime"
+             android:text="20% (12 / 123 days)"
+             android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="wrap_content"
+         android:gravity="center"
+         android:padding="8dp"
+         android:layout_margin="-10dp"
+         android:orientation="vertical"
+         android:layout_weight="0">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="-12dp"
+             android:textSize="36dp"
+             android:textColor="@android:color/white"
+             android:id="@+id/priceInt"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="right"
+             android:textSize="24dp"
+             android:textColor="@android:color/white"
+             android:id="@+id/priceDec" />
+
+    </LinearLayout>
+
+</LinearLayout>

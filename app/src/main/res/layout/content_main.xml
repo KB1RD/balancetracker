@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <TextView
+         android:layout_height="200dp"
+         android:layout_width="match_parent"
+         android:autoSizeStepGranularity="2sp"
+         android:textAlignment="center"
+         android:padding="25sp"
+         android:autoSizeMaxTextSize="200sp"
+         android:autoSizeTextType="uniform"
+         android:autoSizeMinTextSize="12sp"
+         android:id="@+id/availbal"
+         android:text="$123.45" />
+
+    <ProgressBar
+         android:layout_height="40dp"
+         android:layout_width="match_parent"
+         android:max="65535"
+         android:paddingRight="10sp"
+         android:min="0"
+         android:paddingBottom="20sp"
+         android:paddingLeft="10sp"
+         android:progressTint="@color/colorPrimaryP"
+         style="@android:style/Widget.ProgressBar.Horizontal"
+         android:progressDrawable="@drawable/balprogress"
+         android:id="@+id/progress" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="horizontal">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:padding="8dp"
+             android:textSize="18dp"
+             android:layout_weight="1"
+             android:id="@+id/descstr"
+             android:text="Start on 01/01/01 with $0\nEnd on 01/01/01 with $123.45" />
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:gravity="center"
+             android:drawableLeft="@android:drawable/ic_menu_edit"
+             android:id="@+id/editbtn"
+             android:text="Edit" />
+
+    </LinearLayout>
+
+</LinearLayout>
